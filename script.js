@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     if (button) {
       button.addEventListener("click", function() {
-        document.getElementById("service-section").scrollIntoView({ behavior: "smooth" });
+        document.getElementById("contact-section").scrollIntoView({ behavior: "smooth" });
       });
     }
   });
