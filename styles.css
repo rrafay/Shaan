@@ -1,0 +1,321 @@
+/* styles.css */
+
+/* Global Styles */
+@font-face {
+  font-family: 'Ovo';
+  src: url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+}
+
+@font-face {
+  font-family: 'Quattrocento';
+  src: url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+}
+
+body {
+  font-family: 'Quattrocento', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Header Styles */
+header {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Ovo', serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+/* Main Content Styles */
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+/* Hero Section Styles */
+.hero-section {
+  text-align: left;
+  background-color: #7092a1; /* Updated color */
+  color: #fff;
+  padding: 2rem;
+  min-height: 40rem;
+}
+
+h2 {
+  font-family: 'Ovo', sans-serif;
+  font-size: 4.5rem; /* Updated font size for h2 in hero-section */
+  line-height: 80px; /* Updated line height for h2 in hero-section */
+  font-weight: 400; /* Updated font weight for h2 in hero-section */
+  text-align: left;
+  margin-bottom: 1.5rem; /* Updated margin bottom for h2 in hero-section */
+}
+
+/* Other h2 Styles */
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.get-started-btn {
+  background: #B5B2C2;
+  border-radius: 8px;
+  color: #111827;
+  border: 2px solid #B5B2C2;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: 'Ovo', serif;
+
+
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #9896a3;
+}
+
+
+
+
+/* Full Image Section Styles */
+.full-image-section {
+  position: relative;
+  min-height: 100vh; /* Set the section height to the viewport height */
+  overflow: hidden;
+}
+
+.full-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: -1; /* Send the image to the back, behind the content */
+}
+
+
+
+/* About Section Styles */
+.about-section {
+  background-color: #3E606F;
+  color: #fff;
+  padding: 12rem;
+
+  text-align: left;
+}
+
+/* Services Section Styles */
+.services-section {
+  background-color: #333333;
+  color: #fff;
+  padding: 2rem;
+  display: flex; /* Change the display to flex */
+  justify-content: space-between; /* Add space between cards */
+  flex-wrap: nowrap; /* Ensure the cards stay in a single row */
+  overflow-x: auto; /* Add horizontal scroll for smaller screens */
+}
+
+.service-card {
+  flex: 0 0 calc(33.33% - 2rem); /* Adjust the width of each card */
+  border: 0px solid #ccc;
+  padding: 0rem;
+  border-radius: 5px;
+  margin: 1rem;
+  transition: transform 0.2s ease;
+  min-width: 300px; /* Set a minimum width for each card */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.service-card img {
+  width: 100%;
+  height: 200px; /* Set the height of the service card image */
+  object-fit: cover;
+}
+
+
+
+
+
+/* Location Section Styles */
+.location-section {
+  background-color: #7092a1;
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #333333;
+  color: #fff;
+  padding: 12rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 15rem;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .service-card {
+    flex: 1 0 calc(50% - 2rem);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+
+  h2 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .about-section {
+    padding: 2rem;
+  }
+
+  .contact-section {
+    padding: 2rem;
+  }
+  .hero-section .title-items {
+    padding-top: 4rem;
+  }
+
+
+  .service-card {
+    flex: 1 0 100%;
+    margin: 1rem 0;
+  }
+
+   /* Adjust iframe for mobile */
+   iframe {
+    max-width: 75%;
+    height: 100%;
+  }
+
+
+}
+
+
+/* Isolated Styles */
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #ff41ff, #ff4b2b);
+  color: black;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff41ff, #ff4b2b);
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 10px 5px;
+  transition: 0.3s;
+}
+
+.card-body .btn:hover {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive media queries */
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
