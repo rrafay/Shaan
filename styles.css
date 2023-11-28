@@ -137,6 +137,7 @@ h1 {
   padding: 20px;
 }
 
+
 /* Main Content Styles */
 main {
   padding: 0;
@@ -308,14 +309,14 @@ footer {
 
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (min-width: 390px) {
   .service-card {
     flex: 1 0 calc(50% - 2rem);
   }
 }
 
 /* Mobile Styles */
-@media (max-width: 767px) {
+@media (min-width: 390px) {
   h1 {
     font-size: 20px;
     line-height: 28px;
@@ -404,13 +405,13 @@ footer {
 
 /* Responsive media queries */
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 390px) {
   .card {
     width: 40%;
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (min-width: 390px) {
   .container {
     width: 100%;
   }
