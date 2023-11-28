@@ -137,7 +137,6 @@ h1 {
   padding: 20px;
 }
 
-
 /* Main Content Styles */
 main {
   padding: 0;
@@ -309,14 +308,14 @@ footer {
 
 
 /* Media Queries */
-@media (min-width: 390px) {
+@media (max-width: 768px) {
   .service-card {
     flex: 1 0 calc(50% - 2rem);
   }
 }
 
 /* Mobile Styles */
-@media (min-width: 390px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 20px;
     line-height: 28px;
@@ -329,10 +328,6 @@ footer {
   }
 
   .about-section {
-    padding: 2rem;
-  }
-  
-  .completed-section{
     padding: 2rem;
   }
 
@@ -409,13 +404,13 @@ footer {
 
 /* Responsive media queries */
 
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 1000px) {
   .card {
     width: 40%;
   }
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 620px) {
   .container {
     width: 100%;
   }
